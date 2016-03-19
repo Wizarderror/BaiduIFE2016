@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.rectangle {
+    background-color: #ccc;
+    width: 400px;
+    height: 200px;
+    position: absolute;;
+    top: 50%;
+    left: 50%;
+    margin-left: -200px;
+    margin-top: -100px;
+}
+
+.circular_1 {
+    width: 50px;
+    height: 50px;
+    background-color: #fc0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 0 0 50px 0;
+}
+
+.circular_2 {
+    width: 50px;
+    height: 50px;
+    background-color: #fc0;
+    position: absolute;
+    top: 200px;
+    left: 400px;
+    margin-left: -50px;
+    margin-top: -50px;
+    border-radius: 50px 0 0 0;
+}
