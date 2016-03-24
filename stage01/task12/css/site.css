@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.css3-table, .css3-input, .css3-image {
+    padding: 20px;
+}
+
+/* table */
+thead tr{
+    background-color: #000;
+    color: #fff;
+}
+
+tbody tr:nth-child(2n) {
+    background-color: #ccc;
+}
+tbody tr:nth-child(2n+1) {
+    background-color: #fff;
+}
+tbody tr:nth-child(-n+3){
+    color: #f00;
+}
+
+/* input */
+.input {
+    width: 100px;
+    padding: 5px 5px 0 5px;
+    margin: 10px;
+    transition: width 2s;
+    outline: none;
+    border: 0;
+    border-bottom: 1px solid #999;
+}
+
+.input:focus {
+    width: 200px;
+    border-bottom: 1px solid #167;
+}
+
+/* slide */
+.slideshow {
+    width: 200px;
+    height: 150px;
+    border: 1px solid #eee;
+    position: relative;
+    overflow: hidden;
+}
+
+.slideshow .control {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 20;
+}
+
+.slideshow .control .button {
+    padding: 5px;
+    background: rgba(255, 255, 255, 0.5);
+    color: #fff;
+    text-decoration: none;
+}
+
+.slideshow .slides {
+    position: absolute;
+    left: 0;
+}
+
+.slide-1 {
+    background-color: red;
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.slide-2 {
+    background-color: green;
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    top: 0;
+    left: 200px;
+}
+
+.slide-3 {
+    background-color: blue;
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    top: 0;
+    left: 400px;
+}
+
+.slides {
+    transition: all 1s ease-in-out;
+}
+
+.selector#slide1:target ~ .slides {
+    left: 0;
+}
+.selector#slide2:target ~ .slides {
+    left: -100%;
+}
+.selector#slide3:target ~ .slides {
+    left: -200%;
+}
