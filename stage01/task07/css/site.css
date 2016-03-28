@@ -1,0 +1,645 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 1280px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* icon */
+[class*="icon-"] {
+    display: inline-block;
+    vertical-align: middle;
+}
+.icon-book-sm {
+    background-image: url("../img/icon_book.png");
+    width: 31px;
+    height: 31px;
+    margin: 2px;
+}
+.icon-user-sm {
+    background-image: url("../img/icon_user.png");
+    width: 14px;
+    height: 17px;
+    margin: 2px;
+}
+/* button */
+.button {
+    color: #fff;
+    font-family: "Microsoft YaHei", 微软雅黑;
+    display: block;
+    background-color: #e74f4d;
+    border: 2px solid #e74f4d;
+}
+.button:hover {
+    border: 2px solid #fff !important;
+}
+
+.botton-lt {
+    color: #e46669;
+    border: 2px solid #e46669;
+    display: block;
+    font-family: "Microsoft YaHei", 微软雅黑;
+}
+
+.botton-lt:hover {
+    color: #fff;
+    background-color: #e46669;
+}
+
+.circle {
+    background-image: url("../img/circle0.png");
+    height: 12px;
+    width: 11px;
+    display: inline-block;
+}
+
+.circle.active {
+    background-image: url("../img/circle1.png");
+}
+/* float */
+.col-6 {
+    float: left;
+    width: 50%;
+}
+.col-12 {
+    float: left;
+    width: 100%;
+}
+
+/* navbar */
+.navbar {
+    width: 100%;
+    height: 55px;
+    background-color: #fff;
+    padding: 0 50px;
+}
+
+.navbar .icon {
+    font-family: SimHei, STHeiti;
+    font-size: 21px;
+    display: inline-block;
+    float: left;
+    padding: 10px 23px;
+}
+
+.navbar .right {
+    float: right;
+    height: 55px;
+}
+
+.menu {
+    list-style: none;
+    font-size: 14px;
+    font-family: "Microsoft YaHei", 微软雅黑;
+}
+
+.menu .menu-item {
+    float: left;
+}
+
+.menu .menu-item > a {
+    display: block;
+    padding: 17px 23px;
+    color: #787b83;
+    transition: all 0.1s;
+}
+
+.menu .menu-item > a:hover {
+    color: #e74f4d;
+    border-bottom: 3px solid #e74f4d;
+}
+
+.menu .menu-item.active > a {
+    color: #e74f4d;
+    border-bottom: 3px solid #e74f4d;
+}
+
+.navbar .right .login {
+    float: left;
+    font-size: 14px;
+    font-family: "Microsoft YaHei", 微软雅黑;
+    padding: 17px 23px;
+}
+
+.navbar .right .login > a {
+    color: #e74f4d;
+}
+
+/* banner */
+.banner {
+    width: 100%;
+    height: calc(100vh - 55px);
+    background-image: url("../img/banner.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 370px;
+}
+
+.banner .mask {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 110px;
+}
+
+.banner .main {
+    font-family: "Microsoft YaHei", 微软雅黑;
+    color: #fff;
+    font-size: 60px;
+}
+
+.banner .sub {
+    font-family: "Microsoft YaHei", 微软雅黑;
+    color: #fff;
+    font-size: 21px;
+    line-height: 30px;
+    padding-top: 25px;
+}
+
+.banner .let-go {
+    margin-top: 60px;
+    width: 330px;
+    text-align: center;
+    padding: 15px;
+    font-size: 30px;
+}
+
+/* feature */
+.feature {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #fff;
+    font-family: SimHei, STHeiti;
+    font-size: 14px;
+    color: #777;
+}
+
+.feature .item {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.feature .item p {
+    margin-top: 35px;
+    padding: 10px 60px;
+}
+
+.feature .lr {
+    border-right: 1px solid #777;
+}
+
+/* want to know */
+
+.wtk {
+    height: 360px;
+    width: 100%;
+    text-align: center;
+    font-size: 54px;
+    color: #a1a1a1;
+    background-color: #edecec;
+    font-family: SimHei, STHeiti;
+    padding-top: 85px;
+}
+
+.wtk p {
+    margin-top: 45px;
+}
+
+
+/* map city */
+.map {
+    background-image: url("../img/map.png");
+    height: 340px;
+    width: 100%;
+    background-size: cover;
+    background-position-y: 345px;
+}
+
+.map .mask {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 0, 0, 0.1);
+    text-align: center;
+}
+
+.map .title {
+    padding-top: 50px;
+    color: #fff;
+    font-family: "Microsoft YaHei", 微软雅黑;
+    font-size: 21px;
+}
+
+.map .br {
+    border-top: 3px solid #fff;
+    width: 30px;
+    height: 1px;
+    margin: 10px auto;
+}
+
+.map .sub {
+    color: #fff;
+    font-family: "Microsoft YaHei", 微软雅黑;
+    font-size: 12px;
+    padding-top: 7px;
+}
+
+.map .city {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0 80px;
+}
+
+.map .city .select {
+    background: #fff url("../img/arraw.png") no-repeat 95% 50%;
+    width: 240px;
+    height: 35px;
+}
+
+.map .city select {
+    -webkit-appearance: none;
+    background-color: transparent;
+    width: 240px;
+    height: 35px;
+    font-family: "Microsoft YaHei", 微软雅黑;
+    font-size: 12px;
+    padding: 9px;
+    color: #c1c1c1;
+}
+
+.map .city .search {
+    width: 240px;
+    height: 35px;
+    padding: 5px;
+    background-color: #bf4f49;
+    border: 2px solid #bf4f49;
+}
+
+/* activity */
+.activity {
+    width: 100%;
+    height: 605px;
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 150px;
+}
+
+.activity .pic {
+    background-image: url("../img/pic3-6.png");
+    width: 220px;
+    height: 335px;
+    background-repeat: no-repeat;
+    border: 1px solid #e0e0e0;
+    background-color: #fff;
+}
+
+.activity .beijing .pic {
+    background-position: 8px 9px;
+}
+
+.activity .shanghai .pic {
+    background-position: -247px -42px;
+}
+
+.activity .shenzhen .pic {
+    background-position: -505px 9px;
+}
+
+.activity .xianggang .pic {
+    background-position: -759px 9px;
+}
+
+.activity .main {
+    font-size: 15px;
+    font-family: "Microsoft YaHei", 微软雅黑;
+    line-height: 35px;
+}
+
+.activity .shanghai .main {
+    font-size: 22px;
+}
+
+.activity .sub {
+    font-size: 13px;
+    font-family: "Microsoft YaHei", 微软雅黑;
+    color: #c0c0c0;
+    padding-bottom: 10px;
+}
+/* time */
+.time {
+    position: relative;
+    width: 100%;
+    height: 570px;
+
+    overflow: auto;
+    zoom: 1;
+}
+.time .banner {
+    background-image: url("../img/pic_time.png");
+    background-size: cover;
+    height: 100%;
+    float: left;
+    width: 850px;
+    text-align: center;
+    padding-top: 135px;
+    color: #fff;
+}
+.time .banner .a {
+    font-size: 50px;
+    font-family: "Microsoft YaHei", 微软雅黑;
+}
+.time .banner .b {
+    font-size: 158px;
+    line-height: 135px;
+    font-family: "Microsoft YaHei", 微软雅黑;
+}
+.time .banner .c {
+    margin-top: 35px;
+    font-size: 22px;
+    font-family: "Microsoft YaHei", 微软雅黑;
+}
+.time .banner .d {
+    font-size: 22px;
+    font-family: "Microsoft YaHei", 微软雅黑;
+}
+.time .banner .arraw {
+    background: url("../img/white_arraw.png") no-repeat;
+    width: 26px;
+    height: 32px;
+
+    left: 825px;
+    top: 267px;
+    position: absolute;
+}
+.time .content {
+    position: relative;
+    margin-left: 850px;
+}
+.time .content .tab {
+    text-align: center;
+}
+.time .content .tab p{
+    font-family: SimSun, NSimSun, STSong, FangSong, FangSong_GB2312, STFangsong;
+    color: #b7b7b7;
+    line-height: 30px;
+    font-size: 12px;
+    margin-top: 30px;
+}
+.time .content #tab1 .more{
+    width: 105px;
+    height: 30px;
+    font-size: 12px;
+    padding: 4px;
+    margin: 50px auto 0 auto;
+}
+.time .content #tab1 {
+    padding: 165px 73px 25px 73px;
+}
+
+.time .navigation {
+    text-align: center;
+}
+/* new time */
+.newtime {
+    width: 100%;
+    height: 520px;
+    position: relative;
+    font-family: SimHei, STHeiti;
+    font-size: 21px;
+}
+
+.newtime .part1 {
+    float: left;
+    width: 425px;
+    background-color: #e74f4d;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+    padding-top: 170px;
+    line-height: 30px;
+}
+.newtime .part1 .br {
+    width: 30px;
+    border-top: 3px solid #fff;
+    margin: 25px auto;
+}
+.newtime .part1 .button {
+    width: 168px;
+    height: 42px;
+    border: 2px solid #fff;
+    padding: 3px;
+    margin: 0 auto;
+}
+.newtime .part1 .button:hover {
+    background-color: #fff;
+    color: #e74f4d;
+}
+
+.newtime .part2 {
+    float: left;
+    width: 425px;
+    height: 100%;
+    padding-top: 170px;
+    line-height: 30px;
+    text-align: center;
+}
+.newtime .part2 .br {
+    width: 30px;
+    border-top: 3px solid #aaa;
+    margin: 25px auto;
+}
+.newtime .part2 .button-1 {
+    width: 168px;
+    height: 42px;
+    border: 2px solid #e74f4d;
+    padding: 3px;
+    margin: 0 auto;
+    color: #e74f4d;
+    display: block;
+}
+.newtime .part2 .button-1:hover {
+    background-color: #e74f4d;
+    color: #fff;
+}
+.newtime .part3 {
+    position: relative;
+    margin-left: 850px;
+    height: 100%;
+    background-color: #666;
+    background-image: url("../img/pic_subway.png");
+    background-size: cover;
+}
+.newtime .part3 .mask {
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+}
+.newtime .part3 .arraw{
+    background-image: url("../img/arraw-r.png");
+    width: 26px;
+    height: 32px;
+    position: absolute;
+    left: -2px;
+    top: 245px;
+}
+/* join us */
+.joinus {
+    height: 750px;
+    width: 100%;
+}
+.joinus .header {
+    text-align: center;
+    margin: 110px 0;
+}
+.joinus .header .title {
+    font-family: SimHei, STHeiti;
+    font-size: 21px;
+}
+.joinus .header .br {
+    width: 30px;
+    border-top: 3px solid #e74f4d;
+    margin: 10px auto;
+}
+.joinus .header .sub {
+    font-size: 14px;
+    font-family: "Microsoft YaHei", 微软雅黑;
+    color: #b7b7b7;
+}
+.joinus .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.joinus .content .b {
+    margin-top: 31px;
+}
+.joinus .content .c {
+    margin-top: 18px;
+}
+.joinus .content .title {
+    font-family: SimHei, STHeiti;
+    font-size: 14px;
+}
+.joinus .content p {
+    font-family: SimSun, NSimSun, STSong, FangSong, FangSong_GB2312, STFangsong;
+    font-size: 12px;
+    color: #b7b7b7;
+    line-height: 21px;
+    padding-top: 25px;
+}
+.joinus .content .more {
+    text-align: right;
+}
+.joinus .content .agreement {
+    width: 290px;
+}
+.joinus .content .form {
+    width: 640px;
+    font-family: SimSun, NSimSun, STSong, FangSong, FangSong_GB2312, STFangsong;
+    font-size: 12px;
+    color: #8a8a8a;
+}
+.joinus .content .form div {
+    padding: 8px;
+}
+.joinus .content .form input, .joinus .content .form textarea {
+    outline: none;
+    border: none;
+    color: #8a8a8a;
+    background-color: #ededed;
+}
+.joinus .content .form .item {
+    background-color: #ededed;
+}
+.joinus .content .form .submit {
+    font-family: SimHei, STHeiti;
+    width: 100%;
+    font-size: 14px;
+}
+
+/* footer */
+footer .information {
+    width: 100%;
+    height: 360px;
+    background-color: #323232;
+    text-align: center;
+    padding-top: 90px;
+}
+footer .information .main {
+    font-family: SimHei, STHeiti;
+    color: #fff;
+    font-size: 21px;
+}
+footer .information .sub {
+    font-family: SimSun, NSimSun, STSong, FangSong, FangSong_GB2312, STFangsong;
+    font-size: 12px;
+    color: #fff;
+    margin: 10px;
+    line-height: 20px;
+}
+footer .information .input{
+    display: inline-flex;
+    margin-top: 25px;
+}
+footer .information .input #email {
+    width: 430px;
+    height: 40px;
+    font-size: 14px;
+    font-family: "Microsoft YaHei", 微软雅黑;
+    padding-left: 10px;
+}
+footer .information .input .submit {
+    background-color: #6f7178;
+    border: 2px solid #6f7178;
+    height: 40px;
+    width: 80px;
+    font-size: 15px;
+    padding: 6px;
+    font-family: "Microsoft YaHei", 微软雅黑;
+}
+footer .information .share {
+    margin-top: 35px;
+}
+footer .information .share a {
+    margin: 13px;
+}
+footer .footer {
+    width: 100%;
+    height: 55px;
+    background-color: #2f2f2f;
+    padding: 25px 40px 0 100px;
+
+    overflow: auto;
+    zoom: 1;
+}
+footer .footer .copyright {
+    float: left;
+    font-family: SimSun, NSimSun, STSong, FangSong, FangSong_GB2312, STFangsong;
+    font-size: 12px;
+    color: #fff;
+}
+
+footer .footer .backtotop {
+    float:right;
+    font-family: SimSun, NSimSun, STSong, FangSong, FangSong_GB2312, STFangsong;
+    font-size: 12px;
+    color: #fff;
+}
