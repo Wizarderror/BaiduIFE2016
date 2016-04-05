@@ -23,45 +23,45 @@
 
 + 参考以下示例代码，页面加载后，将提供的空气质量数据数组，按照某种逻辑（比如空气质量大于60）进行过滤筛选，最后将符合条件的数据按照一定的格式要求显示在网页上
 
-    <!DOCTYPE html>
-    <html>
-      <head>
-        <meta charset="utf-8">
-        <title>IFE JavaScript Task 01</title>
-      </head>
-    <body>
+        <!DOCTYPE html>
+        <html>
+          <head>
+            <meta charset="utf-8">
+            <title>IFE JavaScript Task 01</title>
+          </head>
+        <body>
 
-      <h3>污染城市列表</h3>
-      <ul id="aqi-list">
-    <!--   
-        <li>第一名：福州（样例），10</li>
-      	<li>第二名：福州（样例），10</li> -->
-      </ul>
+          <h3>污染城市列表</h3>
+          <ul id="aqi-list">
+        <!--   
+            <li>第一名：福州（样例），10</li>
+          	<li>第二名：福州（样例），10</li> -->
+          </ul>
 
-    <script type="text/javascript">
+        <script type="text/javascript">
 
-    var aqiData = [
-      ["北京", 90],
-      ["上海", 50],
-      ["福州", 10],
-      ["广州", 50],
-      ["成都", 90],
-      ["西安", 100]
-    ];
+        var aqiData = [
+          ["北京", 90],
+          ["上海", 50],
+          ["福州", 10],
+          ["广州", 50],
+          ["成都", 90],
+          ["西安", 100]
+        ];
 
-    (function () {
+        (function () {
 
-      /*
-      在注释下方编写代码
-      遍历读取aqiData中各个城市的数据
-      将空气质量指数大于60的城市显示到aqi-list的列表中
-      */
+          /*
+          在注释下方编写代码
+          遍历读取aqiData中各个城市的数据
+          将空气质量指数大于60的城市显示到aqi-list的列表中
+          */
 
-    })();
+        })();
 
-    </script>
-    </body>
-    </html>
+        </script>
+        </body>
+        </html>
 
 ## 任务注意事项
 
