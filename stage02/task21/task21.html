@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tags&Hobby</title>
+    <script src="task.js" charset="utf-8"></script>
+    <style media="screen">
+        #tags {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            flex-direction: row;
+            min-height: 30px;
+        }
+        #tags .item {
+            background-color: blue;
+            height: 20px;
+            color: #fff;
+            font-size: 20px;
+            text-align: center;
+            margin: 2px;
+            padding: 5px;
+        }
+        #tags .item:hover{
+            background-color: red;
+            cursor: pointer;
+        }
+        #tags .item:hover:before{
+            content: '删除';
+        }
+
+        #hobbies {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            flex-direction: row;
+            min-height: 30px;
+        }
+        #hobbies .item {
+            background-color: pink;
+            height: 20px;
+            color: #fff;
+            font-size: 20px;
+            text-align: center;
+            margin: 2px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+<div>
+    Tags:<input type="text" name="name" id="text-input-tags" />
+</div>
+<div id="tags"></div>
+<div>
+    <textarea name="name" rows="8" cols="40" id="text-input-hobby"></textarea>
+    <input type="button" name="name" value="确认兴趣爱好" id="btn-add-hobby"/>
+</div>
+<div id="hobbies"></div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TAGS</title>
+    <script src="task.js" charset="utf-8"></script>
+    <style media="screen">
+        #tags {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            flex-direction: row;
+        }
+        .item {
+            background-color: #ccc;
+            height: 20px;
+            color: #000;
+            font-size: 20px;
+            text-align: center;
+            margin: 2px;
+            padding: 5px;
+        }
+        .item span {
+            color: #fff;
+            background-color: red;
+            border: 1px #666 solid;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <textarea name="name" id="text-input" rows="8" cols="40"></textarea>
+        <input id="btn-left-in" type="button" value="左侧入">
+        <input id="btn-right-in" type="button" value="右侧入">
+        <input id="btn-left-out" type="button" value="左侧出">
+        <input id="btn-right-out" type="button" value="右侧出">
+    </div>
+    <div>
+        <input type="text" id="text-search" />
+        <input type="button" id="btn-search" name="name" value="搜索" />
+    </div>
+    <div id="tags">
+
+    </div>
+</body>
+</html>
