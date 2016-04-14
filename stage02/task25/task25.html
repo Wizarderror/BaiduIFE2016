@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>树形菜单</title>
+    <style media="screen">
+        #tree {
+
+        }
+        #tree .title {
+            min-height: 20px;
+            display: table;
+        }
+        #tree .content {
+            margin-left: 20px;
+            display: none;
+        }
+        #tree .folder > .title:before {
+            content:"+ ";
+        }
+        #tree .folder.opened > .title:before {
+            content:"- ";
+        }
+        #tree .title:before {
+            content:"·";
+        }
+        #tree .folder.opened > .content {
+            display: inline-block;
+        }
+        .found {
+            background-color: blue !important;
+        }
+        .selected {
+            background-color: red !important;
+        }
+    </style>
+    <script src="task.js" charset="utf-8"></script>
+</head>
+<body>
+    <div id="tree"></div>
+    <input type="text" id="text-input" />
+    <input type="button" id="btn-dfs" value="搜索" />
+    <input type="button" id="btn-delete" value = "删除" />
+    <input type="button" id="btn-add" value = "添加" />
+</body>
+</html>
