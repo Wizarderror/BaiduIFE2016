@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>太空旅行</title>
+    <script src="task.js" charset="utf-8"></script>
+    <style media="screen">
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #000
+        }
+        #console {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            border: 1px solid #ccc;
+            width: calc(100vw - 300px);
+            padding: 10px;
+            background-color: rgba(255,255, 255, 0.5);;
+        }
+        #output {
+            position: fixed;
+            right: 0;
+            top: 0;
+            width: 300px;
+            border: 1px solid #fff;
+            color: #fff;
+            padding: 10px;
+            height: 100vh;
+            overflow-x: auto;
+        }
+        #earth {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: blue;
+            position: absolute;
+        }
+        .ship {
+            transform: rotate(30deg);
+            min-width: 100px;
+            min-height: 20px;
+            border: 1px solid #fff;
+            position: absolute;
+        }
+        .ship .progress {
+            background-color: blue;
+            height: 20px;
+            width: 100%;
+        }
+        .ship .info {
+            float: left;
+            width: 100%;
+            text-align: center;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+<div id="output">
+    <div>输出台</div>
+</div>
+<div id="space">
+    <div id="earth"></div>
+</div>
+<div id="console">
+    <div>控制中心</div>
+    <div>
+        动力系统选择：
+        <select id='a'>
+            <option value='a1' >前进号（速率30px/s，能耗5%/s）</option>
+            <option value='a2' >奔腾号（速率50px/s，能耗7%/s）</option>
+            <option value='a3' >超越号（速率80px/s，能耗9%/s）</option>
+        </select>
+    </div>
+    <div>
+        能源系统选择：
+        <select id='b'>
+            <option value='b1' >劲能型（补充能源速度2%/s）</option>
+            <option value='b2' >光能型（补充能源速度3%/s）</option>
+            <option value='b3' >永久型（补充能源速度4%/s）</option>
+        </select>
+    </div>
+    <input type="button" name="name" id="btn-new-ship" value="发射新飞船">
+</div>
+</body>
+</html>
