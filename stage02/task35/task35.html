@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>意念方格</title>
+    <link rel="stylesheet" href="task.css">
+    <link rel="stylesheet" href="codetextarea.css" media="screen" title="no title" charset="utf-8">
+    <script src="codetextarea.js" charset="utf-8"></script>
+    <script src="task.js" charset="utf-8"></script>
+</head>
+<body>
+    <div class="outer">
+        <div class="container">
+            <div class="col-num">
+                <div class="row">
+                    <div class="num">1</div>
+                    <div class="num">2</div>
+                    <div class="num">3</div>
+                    <div class="num">4</div>
+                    <div class="num">5</div>
+                    <div class="num">6</div>
+                    <div class="num">7</div>
+                    <div class="num">8</div>
+                    <div class="num">9</div>
+                    <div class="num">10</div>
+                </div>
+            </div>
+            <div class="row-num">
+                <div class="col">
+                    <div class="num">1</div>
+                    <div class="num">2</div>
+                    <div class="num">3</div>
+                    <div class="num">4</div>
+                    <div class="num">5</div>
+                    <div class="num">6</div>
+                    <div class="num">7</div>
+                    <div class="num">8</div>
+                    <div class="num">9</div>
+                    <div class="num">10</div>
+                </div>
+            </div>
+            <div class="ground">
+                <div id="man"></div>
+                <div class="row">
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                </div>
+                <div class="row">
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                </div>
+                <div class="row">
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                </div>
+                <div class="row">
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                </div>
+                <div class="row">
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                </div>
+                <div class="row">
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                </div>
+                <div class="row">
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                </div>
+                <div class="row">
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                </div>
+                <div class="row">
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                </div>
+                <div class="row">
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                </div>
+            </div>
+        </div>
+        <div class="controller">
+            <div>控制台</div>
+            <div class="">
+                <input type="text" id="text-instruction">
+                <input type="button" id="btn-go" value="GO">
+            </div>
+            <div>指令</div>
+            <div><input type="button" id="btn-t1" value="-->">GO：向前一格 <br />
+                <input type="button" id="btn-t2" value="-->">TUN LEF：向左转（逆时针旋转90度）<br />
+                <input type="button" id="btn-t3" value="-->">TUN RIG：向右转（顺时针旋转90度）<br />
+                <input type="button" id="btn-t4" value="-->">TUN BAC：向右转（旋转180度）<br />
+                <input type="button" id="btn-t5" value="-->">TRA LEF：向屏幕的左侧移动一格，方向不变<br />
+                <input type="button" id="btn-t6" value="-->">TRA TOP：向屏幕的上面移动一格，方向不变<br />
+                <input type="button" id="btn-t7" value="-->">TRA RIG：向屏幕的右侧移动一格，方向不变<br />
+                <input type="button" id="btn-t8" value="-->">TRA BOT：向屏幕的下面移动一格，方向不变<br />
+                <input type="button" id="btn-t9" value="-->">MOV LEF：方向转向屏幕左侧，向屏幕的左侧移动一格<br />
+                <input type="button" id="btn-t10" value="-->">MOV TOP：方向转向屏幕上面，向屏幕的上面移动一格<br />
+                <input type="button" id="btn-t11" value="-->">MOV RIG：方向转向屏幕右侧，向屏幕的右侧移动一格<br />
+                <input type="button" id="btn-t12" value="-->">MOV BOT：方向转向屏幕下面，向屏幕的下面移动一格
+            </div>
+            <div class="bat">
+                指令批处理<br />
+                <textarea id="instbat" name="instbat" rows="8" cols="40"></textarea>
+                <br />
+                <input type="button" id="btn-gobat" value="执行"> <input type="button" id="btn-refresh" value="Refresh">
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
