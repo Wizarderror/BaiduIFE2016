@@ -1,0 +1,29 @@
+.codetextarea {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.codetextarea .linenumbers {
+    background-color: #ccc;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+    width: 30px;
+    overflow: hidden;
+}
+.codetextarea .textarea {
+    background-color: #000;
+    color: #00ff00;
+    line-height: 15px;
+}
+.codetextarea .linenum {
+    text-align: center;
+    line-height: 15px;
+}
+
+.codetextarea .error {
+    background-color: red;
+}
+.codetextarea .current {
+    background-color: blue;
+}
